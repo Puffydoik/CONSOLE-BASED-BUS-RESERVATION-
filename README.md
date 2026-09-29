@@ -1,47 +1,61 @@
-# CityLink Bus Reservation System
+# 🚌 CityLink Bus Reservation System
 
-This is a console-based C++ bus reservation project built using object-oriented programming.
+> A console-based Bus Reservation System built in **C++** using Object-Oriented Programming.
 
-## What was improved
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=cplusplus)
+![OOP](https://img.shields.io/badge/Concept-Object--Oriented-orange?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge)
 
-The original project structure was preserved. The following existing files were enhanced:
+---
 
-- `src/ReservationSystem.cpp`: polished menus, banners, colors, clearer messages, and 12 sample buses.
-- `src/Bus.cpp`: improved bus cards, fare formatting, available-seat count, and seat-map layout.
+## 🌟 About the Project
 
-The existing classes are still used:
+**CityLink Bus Reservation System** is a console-based C++ application designed to simulate a real-world bus booking platform.
 
-- `Bus`, `ACSeater`, `NonACSeater`, and `ACSleeper`
-- `Passenger`
-- `Booking`
-- `Seat`
-- `Waitlist`
-- `ReservationSystem`
+The project demonstrates core **Object-Oriented Programming principles** through a structured reservation system that handles buses, passengers, seats, bookings, cancellations, and waitlists.
 
-## Routes included
+The application features an interactive terminal interface with formatted menus, seat maps, booking details, and sample bus routes.
 
-The sample catalog now contains routes for Pune, Mumbai, Bangalore, Hyderabad, Nashik, Satara, Kolhapur, Ahmedabad, Goa, and Delhi.
+---
 
-## How to build in VS Code with MinGW
+## ✨ Features
 
-Open the project folder in VS Code and run:
+- 🚌 View available buses
+- 🎫 Book bus tickets
+- 👤 Validate passenger details
+- 💺 Reserve specific seats
+- 🗺️ Display seat maps
+- ❌ Cancel bookings
+- 🔎 Search bookings
+- 📋 Display booking information
+- ⏳ Waitlist management
+- 🎨 Colored and formatted console interface
+- 🚌 Multiple sample routes and buses
 
-```bash
-g++ -std=c++17 -Wall -Wextra -pedantic main.cpp src/*.cpp -o BusReservation.exe
-```
+---
 
-Then run:
+## 🧠 Object-Oriented Concepts
 
-```bash
-BusReservation.exe
-```
+This project demonstrates several important OOP concepts:
 
-The existing `BusReservation.exe` should be rebuilt after pulling these source changes, because an executable does not update automatically when a `.cpp` file changes.
+| Concept | Implementation |
+|---|---|
+| **Encapsulation** | Classes encapsulate passenger, bus, booking and seat data |
+| **Inheritance** | Different bus types inherit from common bus functionality |
+| **Polymorphism** | Different bus categories provide specialized behaviour |
+| **Abstraction** | Complex reservation operations are handled through dedicated classes |
+| **Composition** | The reservation system works with buses, passengers, bookings and seats |
 
-## Current functionality
+### Main Classes
 
-The application supports showing all buses, booking tickets, validating passenger details, reserving seats, cancelling tickets, searching bookings, and displaying seat maps. The upgraded interface uses colored terminal sections when the terminal supports ANSI colors.
+```text
+Bus
+├── ACSeater
+├── NonACSeater
+└── ACSleeper
 
-## Admin/project extension ideas
-
-Possible next improvements include saving bookings to files, loading buses from `data/buses.txt`, adding route search by source and destination, implementing waitlist promotion after cancellation, and adding an administrator menu.
+Passenger
+Booking
+Seat
+Waitlist
+ReservationSystem and destination, implementing waitlist promotion after cancellation, and adding an administrator menu.
