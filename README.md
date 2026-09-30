@@ -28,7 +28,6 @@ The application features an interactive terminal interface with formatted menus,
 - ❌ Cancel bookings
 - 🔎 Search bookings
 - 📋 Display booking information
-- ⏳ Waitlist management
 - 🎨 Colored and formatted console interface
 - 🚌 Multiple sample routes and buses
 
@@ -57,5 +56,4 @@ Bus
 Passenger
 Booking
 Seat
-Waitlist
-ReservationSystem and destination, implementing waitlist promotion after cancellation, and adding an administrator menu.
+ReservationSystem and destination.
